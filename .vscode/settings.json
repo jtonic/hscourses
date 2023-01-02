@@ -5,5 +5,8 @@
         "ghc": "9.2.5",
         "stack": "latest"
     },
-    "haskell.formattingProvider": "fourmolu"
+    "haskell.formattingProvider": "fourmolu",
+    "cSpell.words": [
+        "hscourses"
+    ]
 }
