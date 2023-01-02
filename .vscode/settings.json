@@ -1,0 +1,9 @@
+{
+    "haskell.toolchain": {
+        "hls": "1.9.0.0",
+        "cabal": "latest",
+        "ghc": "9.2.5",
+        "stack": "latest"
+    },
+    "haskell.formattingProvider": "fourmolu"
+}

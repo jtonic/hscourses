@@ -1,0 +1,44 @@
+cabal-version:      3.4
+name:               hscourses
+version:            0.1.0.0
+
+author:             Antonel-Ernest Pazargic
+maintainer:         antonel-ernest.pazargic@ing.com
+
+extra-source-files: CHANGELOG.md
+
+library
+    exposed-modules:
+        OpticsByExample.Ex1
+    hs-source-dirs: src
+    build-depends:
+        base          ^>=4.16
+        , lens
+
+executable hscourses-exe
+    main-is:          Main.hs
+    build-depends:
+        base          ^>=4.16
+        , bytestring
+        , deepseq
+        , haskell-say
+        , text
+        , hscourses
+    hs-source-dirs:   app
+    default-language: Haskell2010
+
+test-suite hscourses-test
+    type: exitcode-stdio-1.0
+    main-is: Main.hs
+    hs-source-dirs: test
+    other-modules:
+        Suite
+    build-depends:
+        base ^>=4.16
+        , bytestring
+        , QuickCheck
+        , text
+        , tasty
+        , tasty-hunit
+        , hscourses
+    default-language: Haskell2010
