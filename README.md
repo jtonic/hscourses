@@ -2,26 +2,58 @@
 
 ## Prerequisites
 
-- The GHCup Haskell installer, version v0.1.18.0
+- The GHCup Haskell installer, version latest
+
+```sh
+    ghcup tui # to easily setup the haskell toolchain
+```
 
 - Toolchain
 
 ```json
 "haskell.toolchain": {
-    "hls": "1.9.0.0",
+    "hls": "latest",
     "cabal": "latest",
-    "ghc": "9.2.5",
+    "ghc": "latest",
     "stack": "latest"
 },
 ```
 
+## Cabal basic commands
 
-## cabal basic commands
+- update index from hackage
 
-- cabal build
+```sh
+cabal update
+```
 
-- cabal run
+- install dependencies
 
-- cabal test
+```sh
+cabal install
+```
 
-- cabal test --test-show-details=direct
+- build
+
+```sh
+cabal build
+```
+
+- run
+
+```sh
+cabal run
+```
+
+- repl
+
+```sh
+cabal repl
+```
+
+- test
+
+```sh
+cabal test
+cabal test --test-show-details=direct
+```

@@ -1,12 +1,15 @@
 {
     "haskell.toolchain": {
-        "hls": "1.9.0.0",
+        "hls": "latest",
         "cabal": "latest",
-        "ghc": "9.2.5",
+        "ghc": "latest",
         "stack": "latest"
     },
     "haskell.formattingProvider": "fourmolu",
     "cSpell.words": [
         "hscourses"
-    ]
+    ],
+    "files.watcherExclude": {
+        "**/target": true
+    }
 }
