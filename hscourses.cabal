@@ -1,4 +1,4 @@
-cabal-version:      3.4
+cabal-version:      3.8
 name:               hscourses
 version:            0.1.0.0
 
@@ -11,6 +11,7 @@ library
     exposed-modules:
         OpticsByExample.Ex1
         , MonadsEx.Ex1
+        , Web
     hs-source-dirs: src
     build-depends:
         base          >= 4.16 && < 5
@@ -18,6 +19,10 @@ library
         , bytestring
         , aeson
         , directory
+        , servant
+        , servant-server
+        , http-types
+        , warp
         , lens
 
 executable hscourses-exe
