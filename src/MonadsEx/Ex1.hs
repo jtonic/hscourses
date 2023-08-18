@@ -4,7 +4,7 @@ import           Control.Monad.IO.Class     (liftIO)
 import           Control.Monad.Trans.Except
 import           Data.Aeson
 import qualified Data.ByteString.Lazy       as B
-import System.Directory
+import           System.Directory
 
 readAndParseFile :: FilePath -> ExceptT String IO Value
 readAndParseFile filePath = do
@@ -13,8 +13,8 @@ readAndParseFile filePath = do
     Left err   -> throwE err
     Right json -> return json
 
-main :: IO ()
-main = do
+deserialize :: IO ()
+deserialize = do
   crtDir <- getCurrentDirectory
   result <- runExceptT $ readAndParseFile $ crtDir ++ "/data/input.json"
   case result of

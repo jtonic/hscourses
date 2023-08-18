@@ -45,6 +45,12 @@ cabal build
 cabal run
 ```
 
+- test REST Web Endpoints
+
+```sh
+curl -v http://localhost:8080/hello
+```
+
 - repl
 
 ```sh

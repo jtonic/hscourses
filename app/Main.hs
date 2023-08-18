@@ -1,6 +1,9 @@
 module Main where
-import HaskellSay (haskellSay)
+
+import           MonadsEx.Ex1 (deserialize)
+import           Web          (runApp)
 
 main :: IO ()
-main =
-    haskellSay "Hello, Haskell World!"
+main = do
+  deserialize
+  runApp
