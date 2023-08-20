@@ -17,4 +17,4 @@ app = serve api server
     api :: Proxy API
     api = Proxy
 
-runApp = run 8080 app
+runApp = run 9090 app
