@@ -1,5 +1,9 @@
 # Haskell Courses
 
+## TODO
+
+- [todo](./doc/todo.md)
+
 ## Prerequisites
 
 - The GHCup Haskell installer, version latest
