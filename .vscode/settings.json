@@ -1,8 +1,12 @@
 {
     "haskell.toolchain": {
-        "hls": "2.7.0.0",
-        "cabal": "3.10.2",
-        "ghc": "9.6.4"
+        // "hls": "2.7.0.0",
+        // "cabal": "3.10.2",
+        // "ghc": "9.6.4"
+        "hls": "latest",
+        "cabal": "latest",
+        "ghc": "latest",
+        "stack": "latest",
     },
     "haskell.formattingProvider": "fourmolu",
     "cSpell.words": [
